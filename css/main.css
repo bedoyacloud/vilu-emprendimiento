@@ -7,11 +7,20 @@
   box-sizing: border-box;
 }
 
-/* 1. FUENTE */
+/* 1. FUENTES */
 @font-face {
   font-family: "DM Sans";
   src: url("../fonts/dm-sans.woff2") format("woff2");
-  font-weight: 100 1000; /* un solo archivo con todos los pesos */
+  font-weight: 100 1000;
+  /* un solo archivo con todos los pesos */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/fraunces.woff2") format("woff2");
+  font-weight: 100 900;
+  /* variable: de 100 a 900 en un solo archivo */
   font-style: normal;
 }
 
@@ -19,14 +28,17 @@
 :root {
   --color-crema: #fff8f1;
   --color-cacao: #2b1e1a;
+  --color-terracota: #c2634b;
   --color-terracota-oscuro: #a44f39;
-  --color-terracota-profundo: #8c402d;
   --color-salvia: #8fa58c;
   --color-blanco: #ffffff;
   --color-gris: #6b5e58;
   --color-linea: #e8dcd3;
+  --color-rosa-arena: #f3dcd2;
 
   --font-main: "DM Sans", Arial, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  /* solo para títulos grandes */
 }
 
 /* 3. BASE */
@@ -54,7 +66,9 @@ ul {
 
 /* 4. BOTÓN */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.875rem 1.75rem;
   border-radius: 50rem;
   font-family: var(--font-main);
@@ -68,12 +82,23 @@ ul {
 }
 
 .btn--primary {
-  background-color: var(--color-terracota-oscuro);
+  background-color: var(--color-terracota);
   color: var(--color-blanco);
 }
 
 .btn--primary:hover {
-  background-color: var(--color-terracota-profundo);
+  background-color: var(--color-terracota-oscuro);
+}
+
+.btn--secondary {
+  border: 2px solid var(--color-cacao);
+  color: var(--color-cacao);
+  background-color: transparent;
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-cacao);
+  color: var(--color-crema);
 }
 
 /* 5. LOGO (header y footer) */
@@ -91,7 +116,8 @@ ul {
 
 .logo__img {
   height: 3.5rem;
-  width: auto; /* el logo no es circular: se respeta su proporción real */
+  width: auto;
+  /* el logo no es circular: se respeta su proporción real */
 }
 
 /* En el footer (fondo oscuro) la libélula lleva una placa clara detrás:
@@ -307,7 +333,107 @@ ul {
   font-size: 0.875em;
 }
 
-/* 8. RESPONSIVE */
+/* 8. HERO */
+.hero {
+  padding: 4.5rem 0 5rem;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero__eyebrow {
+  color: var(--color-salvia);
+  font-size: 0.8125em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.hero__description {
+  color: var(--color-gris);
+  font-size: 1.25em;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero__media {
+  position: relative;
+  flex-shrink: 0;
+  width: 35rem;
+}
+
+.hero__media-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 32.5rem;
+  border: 2px dashed var(--color-linea);
+  border-radius: 2rem;
+  background-color: var(--color-rosa-arena);
+  color: var(--color-gris);
+  font-weight: 700;
+}
+
+.hero__badge {
+  position: absolute;
+  left: -2.5rem;
+  bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem 1rem 1.25rem;
+  border-radius: 1.25rem;
+  background-color: var(--color-blanco);
+  box-shadow: 0 0.75rem 2rem rgba(43, 31, 26, 0.12);
+}
+
+.hero__badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: var(--color-rosa-arena);
+}
+
+.hero__badge-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__badge-title {
+  font-weight: 700;
+}
+
+.hero__badge-subtitle {
+  color: var(--color-gris);
+  font-size: 0.875em;
+}
+
+/* 9. RESPONSIVE */
 @media (max-width: 1200px) {
   .footer__columns {
     grid-template-columns: repeat(2, 1fr);
@@ -318,6 +444,14 @@ ul {
 @media (max-width: 768px) {
   .header__container {
     flex-wrap: wrap;
+  }
+
+  .hero__container {
+    flex-direction: column;
+  }
+
+  .hero__media {
+    width: 100%;
   }
 
   .nav {
@@ -332,6 +466,8 @@ ul {
   }
 }
 
+
+
 @media (max-width: 480px) {
   .logo__img {
     height: 2.75rem;
@@ -343,5 +479,19 @@ ul {
 
   .footer__columns {
     grid-template-columns: 1fr;
+  }
+
+  .hero__title {
+    font-size: 2.25rem;
+  }
+
+  .hero__badge {
+    left: 1rem;
+    right: 1rem;
+    bottom: -1.5rem;
+  }
+
+  .hero__media-placeholder {
+    height: 20rem;
   }
 }
