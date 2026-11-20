@@ -50,163 +50,263 @@
   </header>
 
   <main>
-  <section class="hero">
-    <div class="container hero__container">
 
-      <div class="hero__text">
-        <p class="hero__eyebrow">Hecho a mano en Sevilla</p>
-        <h1 class="hero__title">Detalles hechos a mano, con mucho amor</h1>
-        <p class="hero__description">Pulseras, madera pintada y chocolates creados por dos hermanas emprendedoras. Cada pieza es única.</p>
+    <section class="hero">
+      <div class="container hero__container">
 
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="tienda.html">
-            Ver la tienda
-            <img src="img/icono-flecha.svg" alt="" width="20" height="20">
-          </a>
-          <a class="btn btn--secondary" href="personalizados.html">Encargar uno personalizado</a>
+        <div class="hero__text">
+          <p class="hero__eyebrow">Hecho a mano en Sevilla</p>
+          <h1 class="hero__title">Detalles hechos a mano, con mucho amor</h1>
+          <p class="hero__description">Pulseras, madera pintada y chocolates creados por dos hermanas emprendedoras.
+            Cada pieza es única.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="tienda.html">
+              Ver la tienda
+              <img src="img/icono-flecha.svg" alt="" width="20" height="20">
+            </a>
+            <a class="btn btn--secondary" href="personalizados.html">Encargar uno personalizado</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__media-placeholder" aria-hidden="true">Foto del producto</div>
+
+          <div class="hero__badge">
+            <span class="hero__badge-icon">
+              <img src="img/icono-corazon.svg" alt="" width="24" height="24">
+            </span>
+            <span class="hero__badge-text">
+              <span class="hero__badge-title">100 % hecho a mano</span>
+              <span class="hero__badge-subtitle">Pulseras · Madera · Chocolates</span>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="categorias">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Nuestras creaciones</p>
+          <h2 class="section-heading__title">¿Qué te apetece hoy?</h2>
+        </div>
+
+        <div class="categorias__grid">
+
+          <article class="categoria-card">
+            <div class="categoria-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: pulseras</p>
+            </div>
+            <div class="categoria-card__texto">
+              <h3 class="categoria-card__titulo">Pulseras</h3>
+              <p class="categoria-card__descripcion">Tejidas a mano con hilos y mostacillas.</p>
+              <a class="categoria-card__enlace" href="tienda.html">
+                Ver productos
+                <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
+              </a>
+            </div>
+          </article>
+
+          <article class="categoria-card">
+            <div class="categoria-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: madera pintada</p>
+            </div>
+            <div class="categoria-card__texto">
+              <h3 class="categoria-card__titulo">Madera pintada</h3>
+              <p class="categoria-card__descripcion">Servilleteros, soportes de móvil y casitas para huevos.</p>
+              <a class="categoria-card__enlace" href="tienda.html">
+                Ver productos
+                <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
+              </a>
+            </div>
+          </article>
+
+          <article class="categoria-card">
+            <div class="categoria-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: chocolates</p>
+            </div>
+            <div class="categoria-card__texto">
+              <h3 class="categoria-card__titulo">Chocolates</h3>
+              <p class="categoria-card__descripcion">Cajas de chocolates para regalar en ocasiones especiales.</p>
+              <a class="categoria-card__enlace" href="tienda.html">
+                Ver productos
+                <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
+              </a>
+            </div>
+          </article>
+
         </div>
       </div>
+    </section>
 
-      <div class="hero__media">
-        <div class="hero__media-placeholder" aria-hidden="true">Foto del producto</div>
+    <section class="productos">
+      <div class="container">
 
-        <div class="hero__badge">
-          <span class="hero__badge-icon">
-            <img src="img/icono-corazon.svg" alt="" width="24" height="24">
-          </span>
-          <span class="hero__badge-text">
-            <span class="hero__badge-title">100 % hecho a mano</span>
-            <span class="hero__badge-subtitle">Pulseras · Madera · Chocolates</span>
-          </span>
+        <div class="productos__header">
+          <div class="section-heading">
+            <p class="section-heading__eyebrow">Lo más pedido</p>
+            <h2 class="section-heading__title">Productos destacados</h2>
+          </div>
+          <a class="btn btn--secondary" href="tienda.html">
+            Ver toda la tienda
+            <img src="img/icono-flecha-cacao.svg" alt="" width="20" height="20">
+          </a>
+        </div>
+
+        <div class="productos__grid">
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: pulsera de mostacillas</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Pulseras</span>
+              <h3 class="producto-card__nombre">Pulsera de mostacillas</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">15,00 €</span>
+                <button class="producto-card__anadir" type="button"
+                  aria-label="Añadir Pulsera de mostacillas al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: pulsera con dije dorado</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Pulseras</span>
+              <h3 class="producto-card__nombre">Pulsera con dije dorado</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">12,00 €</span>
+                <button class="producto-card__anadir" type="button"
+                  aria-label="Añadir Pulsera con dije dorado al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: servilletero pintado</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Madera pintada</span>
+              <h3 class="producto-card__nombre">Servilletero pintado</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">10,00 €</span>
+                <button class="producto-card__anadir" type="button" aria-label="Añadir Servilletero pintado al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: caja de chocolates</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Chocolates</span>
+              <h3 class="producto-card__nombre">Caja de chocolates</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">8,00 €</span>
+                <button class="producto-card__anadir" type="button" aria-label="Añadir Caja de chocolates al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <section class="categorias">
-  <div class="container">
-
-    <div class="section-heading">
-      <p class="section-heading__eyebrow">Nuestras creaciones</p>
-      <h2 class="section-heading__title">¿Qué te apetece hoy?</h2>
-    </div>
-
-    <div class="categorias__grid">
-
-      <article class="categoria-card">
-        <div class="categoria-card__foto">
-          <img src="img/icono-foto.svg" alt="" width="36" height="36">
-          <p>Foto: pulseras</p>
-        </div>
-        <div class="categoria-card__texto">
-          <h3 class="categoria-card__titulo">Pulseras</h3>
-          <p class="categoria-card__descripcion">Tejidas a mano con hilos y mostacillas.</p>
-          <a class="categoria-card__enlace" href="tienda.html">
-            Ver productos
-            <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
-          </a>
-        </div>
-      </article>
-
-      <article class="categoria-card">
-        <div class="categoria-card__foto">
-          <img src="img/icono-foto.svg" alt="" width="36" height="36">
-          <p>Foto: madera pintada</p>
-        </div>
-        <div class="categoria-card__texto">
-          <h3 class="categoria-card__titulo">Madera pintada</h3>
-          <p class="categoria-card__descripcion">Servilleteros, soportes de móvil y casitas para huevos.</p>
-          <a class="categoria-card__enlace" href="tienda.html">
-            Ver productos
-            <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
-          </a>
-        </div>
-      </article>
-
-      <article class="categoria-card">
-        <div class="categoria-card__foto">
-          <img src="img/icono-foto.svg" alt="" width="36" height="36">
-          <p>Foto: chocolates</p>
-        </div>
-        <div class="categoria-card__texto">
-          <h3 class="categoria-card__titulo">Chocolates</h3>
-          <p class="categoria-card__descripcion">Cajas de chocolates para regalar en ocasiones especiales.</p>
-          <a class="categoria-card__enlace" href="tienda.html">
-            Ver productos
-            <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-</main>
+  </main>
 
   <footer class="footer">
-  <div class="container">
+    <div class="container">
 
-    <div class="footer__columns">
+      <div class="footer__columns">
 
-      <div>
-        <a class="logo logo--light" href="index.html">
-          <img class="logo__img" src="img/logo.png" alt="" width="163" height="200">
-          <span class="logo__text">
-            <span class="logo__name">ViLu</span>
-            <span class="logo__tagline logo__tagline--light">Hecho con amor</span>
-          </span>
-        </a>
-        <p class="footer__text">Pulseras, madera pintada y chocolates hechos a mano por dos hermanas emprendedoras en Sevilla.</p>
-        <ul class="social">
-          <li><a class="social__link" href="https://www.instagram.com/vilu.hechoconamor" aria-label="Instagram de ViLu"><img src="img/icono-instagram.svg" alt="" width="22" height="22"></a></li>
-          <li><a class="social__link" href="https://www.tiktok.com/@vilu.hechoconamor" aria-label="TikTok de ViLu"><img src="img/icono-tiktok.svg" alt="" width="22" height="22"></a></li>
-          <li><a class="social__link" href="https://wa.me/34000000000" aria-label="WhatsApp de ViLu"><img src="img/icono-whatsapp.svg" alt="" width="22" height="22"></a></li>
-        </ul>
+        <div>
+          <a class="logo logo--light" href="index.html">
+            <img class="logo__img" src="img/logo.png" alt="" width="163" height="200">
+            <span class="logo__text">
+              <span class="logo__name">ViLu</span>
+              <span class="logo__tagline logo__tagline--light">Hecho con amor</span>
+            </span>
+          </a>
+          <p class="footer__text">Pulseras, madera pintada y chocolates hechos a mano por dos hermanas emprendedoras en
+            Sevilla.</p>
+          <ul class="social">
+            <li><a class="social__link" href="https://www.instagram.com/vilu.hechoconamor"
+                aria-label="Instagram de ViLu"><img src="img/icono-instagram.svg" alt="" width="22" height="22"></a>
+            </li>
+            <li><a class="social__link" href="https://www.tiktok.com/@vilu.hechoconamor"
+                aria-label="TikTok de ViLu"><img src="img/icono-tiktok.svg" alt="" width="22" height="22"></a></li>
+            <li><a class="social__link" href="https://wa.me/34000000000" aria-label="WhatsApp de ViLu"><img
+                  src="img/icono-whatsapp.svg" alt="" width="22" height="22"></a></li>
+          </ul>
+        </div>
+
+        <nav aria-label="Explora">
+          <h2 class="footer__title">Explora</h2>
+          <ul class="footer__list">
+            <li><a class="footer__link" href="index.html">Inicio</a></li>
+            <li><a class="footer__link" href="tienda.html">Tienda</a></li>
+            <li><a class="footer__link" href="taller.html">Taller</a></li>
+            <li><a class="footer__link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Ayuda</h2>
+          <ul class="footer__list">
+            <li><a class="footer__link" href="contacto.html">Envíos y entregas</a></li>
+            <li><a class="footer__link" href="personalizados.html">Pedidos personalizados</a></li>
+            <li><a class="footer__link" href="contacto.html">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Novedades</h2>
+          <!-- PEC 5 (JS): validar correo -->
+          <form class="newsletter" action="#" method="post">
+            <label class="newsletter__label" for="newsletter-email">Recibe las nuevas colecciones en tu correo.</label>
+            <div class="newsletter__box">
+              <input class="newsletter__input" type="email" id="newsletter-email" name="email" placeholder="Tu correo"
+                required>
+              <button class="btn btn--primary" type="submit">Suscribirme</button>
+            </div>
+          </form>
+        </div>
+
       </div>
 
-      <nav aria-label="Explora">
-        <h2 class="footer__title">Explora</h2>
-        <ul class="footer__list">
-          <li><a class="footer__link" href="index.html">Inicio</a></li>
-          <li><a class="footer__link" href="tienda.html">Tienda</a></li>
-          <li><a class="footer__link" href="taller.html">Taller</a></li>
-          <li><a class="footer__link" href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+      <div class="footer__bottom">
+        <p>© 2026 ViLu · Hecho a mano en Sevilla</p>
+        <p>Made with <span aria-hidden="true">❤️</span><span class="visually-hidden"> love</span> by <a
+            class="footer__link" href="https://creatuapp.es" target="_blank" rel="noopener noreferrer">creatuapp.es</a>
+        </p>
 
-      <div>
-        <h2 class="footer__title">Ayuda</h2>
-        <ul class="footer__list">
-          <li><a class="footer__link" href="contacto.html">Envíos y entregas</a></li>
-          <li><a class="footer__link" href="personalizados.html">Pedidos personalizados</a></li>
-          <li><a class="footer__link" href="contacto.html">Preguntas frecuentes</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2 class="footer__title">Novedades</h2>
-        <!-- PEC 5 (JS): validar correo -->
-        <form class="newsletter" action="#" method="post">
-          <label class="newsletter__label" for="newsletter-email">Recibe las nuevas colecciones en tu correo.</label>
-          <div class="newsletter__box">
-            <input class="newsletter__input" type="email" id="newsletter-email" name="email" placeholder="Tu correo" required>
-            <button class="btn btn--primary" type="submit">Suscribirme</button>
-          </div>
-        </form>
       </div>
 
     </div>
-
-    <div class="footer__bottom">
-      <p>© 2026 ViLu · Hecho a mano en Sevilla</p>
-      <p>Made with <span aria-hidden="true">❤️</span><span class="visually-hidden"> love</span> by <a class="footer__link" href="https://creatuapp.es" target="_blank" rel="noopener noreferrer">creatuapp.es</a></p>
-
-    </div>
-
-  </div>
-</footer>
+  </footer>
 
   <script src="js/main.js" defer></script>
 

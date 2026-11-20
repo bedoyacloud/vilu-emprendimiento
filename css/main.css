@@ -520,7 +520,110 @@ ul {
   text-decoration: underline;
 }
 
-/* 10. RESPONSIVE */
+/* 10. PRODUCTOS DESTACADOS */
+.productos {
+  padding: 6rem 0;
+}
+
+.productos__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.productos__grid {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.producto-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: 0.75rem 0.75rem 1.25rem;
+  border: 1px solid var(--color-linea);
+  border-radius: 1.25rem;
+  background-color: var(--color-blanco);
+  box-shadow: 0 0.5rem 0.75rem rgba(43, 31, 26, 0.06);
+}
+
+.producto-card__foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  height: 15.75rem;
+  padding: 0 1rem;
+  border-radius: 0.875rem;
+  background-color: var(--color-rosa-arena);
+  color: var(--color-gris);
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.producto-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  flex: 1;
+}
+
+.producto-card__etiqueta {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+  background-color: var(--color-crema);
+  color: var(--color-salvia);
+  font-size: 0.8125em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.producto-card__nombre {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.producto-card__precio-fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+}
+
+.producto-card__precio {
+  color: var(--color-terracota);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.producto-card__anadir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-terracota);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.producto-card__anadir:hover {
+  background-color: var(--color-terracota-oscuro);
+}
+
+/* 11. RESPONSIVE */
 @media (max-width: 1200px) {
   .footer__columns {
     grid-template-columns: repeat(2, 1fr);
@@ -553,6 +656,15 @@ ul {
   }
 
   .categorias__grid {
+    flex-direction: column;
+  }
+
+  .productos__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .productos__grid {
     flex-direction: column;
   }
 
