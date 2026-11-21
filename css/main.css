@@ -958,7 +958,105 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-/* 18. RESPONSIVE */
+/* 18. QUIÉNES SOMOS (taller) */
+.quienes-somos {
+  padding: 6rem 0;
+}
+
+.quienes-somos__container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.quienes-somos__foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  width: 32.5rem;
+  height: 35rem;
+  border-radius: 2rem;
+  background-color: var(--color-rosa-arena);
+  color: var(--color-gris);
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.quienes-somos__texto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.quienes-somos__parrafo {
+  color: var(--color-gris);
+  font-size: 1.25em;
+}
+
+.quienes-somos__datos {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.dato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.dato__numero {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-terracota);
+  line-height: 1.15;
+}
+
+.dato__etiqueta {
+  color: var(--color-gris);
+  font-size: 0.875em;
+}
+
+/* 19. PROCESO (taller) */
+.proceso {
+  padding: 6rem 0;
+  background-color: var(--color-rosa-arena);
+}
+
+.proceso__pasos {
+  display: flex;
+  gap: 2rem;
+}
+
+/* 20. GALERÍA DE TRABAJOS (taller) */
+.galeria {
+  padding: 6rem 0;
+}
+
+.galeria__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.galeria__foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 1.25rem;
+  background-color: var(--color-rosa-arena);
+  color: var(--color-gris);
+  font-size: 0.875em;
+  text-align: center;
+}
+
+/* 21. RESPONSIVE */
 @media (max-width: 1200px) {
   .footer__columns {
     grid-template-columns: repeat(2, 1fr);
@@ -1029,6 +1127,21 @@ ul {
     flex-direction: column;
   }
 
+  .quienes-somos__container {
+    flex-direction: column;
+  }
+
+  .quienes-somos__foto {
+    width: 100%;
+  }
+
+  .proceso__pasos {
+    flex-direction: column;
+  }
+
+  .galeria__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
@@ -1064,5 +1177,9 @@ ul {
 
   .cabecera-pagina__titulo {
     font-size: 2.25rem;
+  }
+
+  .galeria__grid {
+    grid-template-columns: 1fr;
   }
 }
