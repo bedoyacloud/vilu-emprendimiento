@@ -8,6 +8,7 @@
   <meta name="description" content="Contacta con ViLu en Sevilla: pulseras, madera pintada y chocolates hechos a mano.">
 
   <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
   <link rel="preload" href="fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -50,10 +51,167 @@
 
   <main>
 
-    <section class="pagina-en-construccion">
+    <section class="cabecera-pagina">
+      <div class="container cabecera-pagina__container">
+        <p class="cabecera-pagina__eyebrow">Contacto</p>
+        <h1 class="cabecera-pagina__titulo">Hablemos de tu pedido</h1>
+        <p class="cabecera-pagina__descripcion">Cuéntanos qué necesitas y te respondemos lo antes posible.</p>
+      </div>
+    </section>
+
+    <section class="contacto">
+      <div class="container contacto__grid">
+
+        <form class="formulario-contacto" action="#" method="post">
+          <h2 class="formulario-contacto__titulo">Escríbenos</h2>
+
+          <div class="formulario-contacto__fila">
+            <div class="campo">
+              <label class="campo__etiqueta" for="nombre">Nombre</label>
+              <input class="campo__input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="campo">
+              <label class="campo__etiqueta" for="email">Email</label>
+              <input class="campo__input" type="email" id="email" name="email" placeholder="tu@correo.com" required>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label class="campo__etiqueta" for="interes">¿Qué te interesa?</label>
+            <select class="campo__input" id="interes" name="interes">
+              <option>Un pedido personalizado</option>
+              <option>Un producto de la tienda</option>
+              <option>Otra consulta</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label class="campo__etiqueta" for="mensaje">Mensaje</label>
+            <textarea class="campo__input campo__input--textarea" id="mensaje" name="mensaje"
+              placeholder="Cuéntanos tu idea" required></textarea>
+          </div>
+
+          <!-- PEC 5 (JS): validaremos los campos y enviaremos el formulario -->
+          <button class="btn btn--primary" type="submit">
+            Enviar mensaje
+            <img src="img/icono-flecha.svg" alt="" width="20" height="20">
+          </button>
+        </form>
+
+        <div class="datos-contacto">
+
+          <div class="tarjeta-contacto">
+            <span class="tarjeta-contacto__icono">
+              <img src="img/icono-whatsapp-terracota.svg" alt="" width="24" height="24">
+            </span>
+            <span class="tarjeta-contacto__texto">
+              <span class="tarjeta-contacto__titulo">WhatsApp</span>
+              <span class="tarjeta-contacto__descripcion">La forma más rápida de pedir</span>
+            </span>
+          </div>
+
+          <div class="tarjeta-contacto">
+            <span class="tarjeta-contacto__icono">
+              <img src="img/icono-instagram-terracota.svg" alt="" width="24" height="24">
+            </span>
+            <span class="tarjeta-contacto__texto">
+              <span class="tarjeta-contacto__titulo">Instagram</span>
+              <span class="tarjeta-contacto__descripcion">@vilu.hechoconamor</span>
+            </span>
+          </div>
+
+          <div class="tarjeta-contacto">
+            <span class="tarjeta-contacto__icono">
+              <img src="img/icono-correo.svg" alt="" width="24" height="24">
+            </span>
+            <span class="tarjeta-contacto__texto">
+              <span class="tarjeta-contacto__titulo">Email</span>
+              <span class="tarjeta-contacto__descripcion">hola@vilu.fashion</span>
+            </span>
+          </div>
+
+          <div class="tarjeta-contacto">
+            <span class="tarjeta-contacto__icono">
+              <img src="img/icono-ubicacion.svg" alt="" width="24" height="24">
+            </span>
+            <span class="tarjeta-contacto__texto">
+              <span class="tarjeta-contacto__titulo">Sevilla, España</span>
+              <span class="tarjeta-contacto__descripcion">Entregas a mano y envíos</span>
+            </span>
+          </div>
+
+          <div class="tarjeta-contacto">
+            <span class="tarjeta-contacto__icono">
+              <img src="img/icono-reloj.svg" alt="" width="24" height="24">
+            </span>
+            <span class="tarjeta-contacto__texto">
+              <span class="tarjeta-contacto__titulo">Horario</span>
+              <span class="tarjeta-contacto__descripcion">Lunes a sábado, de 10:00 a 20:00</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="preguntas">
       <div class="container">
-        <h1>Contacto</h1>
-        <p>Esta página está en construcción. Muy pronto podrás ver aquí todo el contenido.</p>
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Preguntas frecuentes</p>
+          <h2 class="section-heading__title">Resolvemos tus dudas</h2>
+        </div>
+
+        <details class="pregunta">
+          <summary class="pregunta__resumen">
+            ¿Cuánto tarda un pedido?
+            <span class="pregunta__icono" aria-hidden="true">+</span>
+          </summary>
+          <p class="pregunta__respuesta">Los productos en stock salen en 2 o 3 días. Los personalizados tardan entre 5 y
+            7 días.</p>
+        </details>
+
+        <details class="pregunta">
+          <summary class="pregunta__resumen">
+            ¿Hacéis envíos fuera de Sevilla?
+            <span class="pregunta__icono" aria-hidden="true">+</span>
+          </summary>
+          <p class="pregunta__respuesta">Sí, enviamos a toda España. Dentro de Sevilla también puedes recoger tu pedido
+            en persona.</p>
+        </details>
+
+        <details class="pregunta">
+          <summary class="pregunta__resumen">
+            ¿Cómo se paga?
+            <span class="pregunta__icono" aria-hidden="true">+</span>
+          </summary>
+          <p class="pregunta__respuesta">Aceptamos Bizum o efectivo al recoger el pedido.</p>
+        </details>
+
+        <details class="pregunta">
+          <summary class="pregunta__resumen">
+            ¿Puedo pedir una pulsera con un nombre?
+            <span class="pregunta__icono" aria-hidden="true">+</span>
+          </summary>
+          <p class="pregunta__respuesta">Claro, escríbenos por WhatsApp con el nombre o las iniciales que quieras y te
+            la preparamos.</p>
+        </details>
+
+      </div>
+    </section>
+
+    <section class="banner-personalizados">
+      <div class="container">
+        <div class="banner-cta">
+          <div class="banner-cta__texto">
+            <p class="banner-cta__etiqueta">Personalizados</p>
+            <h2 class="banner-cta__titulo">¿Quieres un regalo único? Lo hacemos con su nombre</h2>
+            <p class="banner-cta__descripcion">Pulseras con iniciales, servilleteros y soportes pintados a tu gusto.</p>
+          </div>
+          <a class="btn btn--light" href="https://wa.me/34000000000">
+            Pedir por WhatsApp
+            <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
+          </a>
+        </div>
       </div>
     </section>
 
@@ -133,4 +291,3 @@
   <script src="js/main.js" defer></script>
 
 </body>
-
