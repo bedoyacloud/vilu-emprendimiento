@@ -850,7 +850,25 @@ ul {
   font-size: 0.875em;
 }
 
-/* 15. RESPONSIVE */
+/* 15. PÁGINAS EN CONSTRUCCIÓN (tienda, taller, personalizados, contacto) */
+.pagina-en-construccion {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.pagina-en-construccion h1 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.pagina-en-construccion p {
+  color: var(--color-gris);
+  font-size: 1.125em;
+}
+
+/* 16. RESPONSIVE */
 @media (max-width: 1200px) {
   .footer__columns {
     grid-template-columns: repeat(2, 1fr);

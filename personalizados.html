@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViLu · Pedidos personalizados — Regalos únicos hechos a mano</title>
+  <meta name="description" content="Pide tu pulsera, servilletero o detalle personalizado hecho a mano por ViLu en Sevilla.">
+
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <link rel="preload" href="fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/logo.png" alt="" width="163" height="200">
+        <span class="logo__text">
+          <span class="logo__name">ViLu</span>
+          <span class="logo__tagline">Hecho con amor</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Menú principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Inicio</a></li>
+          <li><a class="nav__link" href="tienda.html">Tienda</a></li>
+          <li><a class="nav__link" href="taller.html">Taller</a></li>
+          <li><a class="nav__link nav__link--active" href="personalizados.html" aria-current="page">Personalizados</a></li>
+          <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <!-- PEC 5 (JS): el contador del carrito sumará productos -->
+        <button class="cart" type="button" aria-label="Carrito: 2 productos">
+          <img src="img/icono-carrito.svg" alt="" width="24" height="24">
+          <span class="cart__count">2</span>
+        </button>
+        <a class="btn btn--primary header__whatsapp" href="https://wa.me/34000000000">Pedir por WhatsApp</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="pagina-en-construccion">
+      <div class="container">
+        <h1>Pedidos personalizados</h1>
+        <p>Esta página está en construcción. Muy pronto podrás ver aquí todo el contenido.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__columns">
+
+        <div>
+          <a class="logo logo--light" href="index.html">
+            <img class="logo__img" src="img/logo.png" alt="" width="163" height="200">
+            <span class="logo__text">
+              <span class="logo__name">ViLu</span>
+              <span class="logo__tagline logo__tagline--light">Hecho con amor</span>
+            </span>
+          </a>
+          <p class="footer__text">Pulseras, madera pintada y chocolates hechos a mano por dos hermanas emprendedoras en
+            Sevilla.</p>
+          <ul class="social">
+            <li><a class="social__link" href="https://www.instagram.com/vilu.hechoconamor"
+                aria-label="Instagram de ViLu"><img src="img/icono-instagram.svg" alt="" width="22" height="22"></a>
+            </li>
+            <li><a class="social__link" href="https://www.tiktok.com/@vilu.hechoconamor"
+                aria-label="TikTok de ViLu"><img src="img/icono-tiktok.svg" alt="" width="22" height="22"></a></li>
+            <li><a class="social__link" href="https://wa.me/34000000000" aria-label="WhatsApp de ViLu"><img
+                  src="img/icono-whatsapp.svg" alt="" width="22" height="22"></a></li>
+          </ul>
+        </div>
+
+        <nav aria-label="Explora">
+          <h2 class="footer__title">Explora</h2>
+          <ul class="footer__list">
+            <li><a class="footer__link" href="index.html">Inicio</a></li>
+            <li><a class="footer__link" href="tienda.html">Tienda</a></li>
+            <li><a class="footer__link" href="taller.html">Taller</a></li>
+            <li><a class="footer__link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Ayuda</h2>
+          <ul class="footer__list">
+            <li><a class="footer__link" href="contacto.html">Envíos y entregas</a></li>
+            <li><a class="footer__link" href="personalizados.html">Pedidos personalizados</a></li>
+            <li><a class="footer__link" href="contacto.html">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Novedades</h2>
+          <!-- PEC 5 (JS): validar correo -->
+          <form class="newsletter" action="#" method="post">
+            <label class="newsletter__label" for="newsletter-email">Recibe las nuevas colecciones en tu correo.</label>
+            <div class="newsletter__box">
+              <input class="newsletter__input" type="email" id="newsletter-email" name="email" placeholder="Tu correo"
+                required>
+              <button class="btn btn--primary" type="submit">Suscribirme</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 ViLu · Hecho a mano en Sevilla</p>
+        <p>Made with <span aria-hidden="true">❤️</span><span class="visually-hidden"> love</span> by <a
+            class="footer__link" href="https://creatuapp.es" target="_blank" rel="noopener noreferrer">creatuapp.es</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+
+</body>
+
