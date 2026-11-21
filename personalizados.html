@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ViLu · Pedidos personalizados — Regalos únicos hechos a mano</title>
-  <meta name="description" content="Pide tu pulsera, servilletero o detalle personalizado hecho a mano por ViLu en Sevilla.">
+  <meta name="description"
+    content="Pide tu pulsera, servilletero o detalle personalizado hecho a mano por ViLu en Sevilla.">
 
   <link rel="icon" href="img/favicon.png" type="image/png">
 
@@ -31,7 +32,8 @@
           <li><a class="nav__link" href="index.html">Inicio</a></li>
           <li><a class="nav__link" href="tienda.html">Tienda</a></li>
           <li><a class="nav__link" href="taller.html">Taller</a></li>
-          <li><a class="nav__link nav__link--active" href="personalizados.html" aria-current="page">Personalizados</a></li>
+          <li><a class="nav__link nav__link--active" href="personalizados.html" aria-current="page">Personalizados</a>
+          </li>
           <li><a class="nav__link" href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
@@ -50,10 +52,115 @@
 
   <main>
 
-    <section class="pagina-en-construccion">
+    <!-- Esta página no está diseñada en el Figma original -->
+
+    <section class="cabecera-pagina">
+      <div class="container cabecera-pagina__container">
+        <p class="cabecera-pagina__eyebrow">Personalizados</p>
+        <h1 class="cabecera-pagina__titulo">Hazlo único, a tu manera</h1>
+        <p class="cabecera-pagina__descripcion">Pulseras con iniciales, servilleteros y soportes pintados como tú los
+          imagines.</p>
+      </div>
+    </section>
+
+    <section class="que-personalizar">
       <div class="container">
-        <h1>Pedidos personalizados</h1>
-        <p>Esta página está en construcción. Muy pronto podrás ver aquí todo el contenido.</p>
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Qué puedes personalizar</p>
+          <h2 class="section-heading__title">Elige, cuéntanos y lo hacemos</h2>
+        </div>
+
+        <div class="categorias__grid">
+
+          <article class="categoria-card">
+            <div class="categoria-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: pulsera con iniciales</p>
+            </div>
+            <div class="categoria-card__texto">
+              <h3 class="categoria-card__titulo">Pulseras con iniciales</h3>
+              <p class="categoria-card__descripcion">Elige el nombre, las letras o los colores de tu pulsera.</p>
+              <a class="categoria-card__enlace" href="https://wa.me/34000000000">
+                Pedir por WhatsApp
+                <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
+              </a>
+            </div>
+          </article>
+
+          <article class="categoria-card">
+            <div class="categoria-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: servilletero personalizado</p>
+            </div>
+            <div class="categoria-card__texto">
+              <h3 class="categoria-card__titulo">Servilleteros con nombre</h3>
+              <p class="categoria-card__descripcion">Para la mesa, con el nombre o la fecha que quieras.</p>
+              <a class="categoria-card__enlace" href="https://wa.me/34000000000">
+                Pedir por WhatsApp
+                <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
+              </a>
+            </div>
+          </article>
+
+          <article class="categoria-card">
+            <div class="categoria-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: soporte de móvil personalizado</p>
+            </div>
+            <div class="categoria-card__texto">
+              <h3 class="categoria-card__titulo">Soportes de móvil</h3>
+              <p class="categoria-card__descripcion">Pintados a mano con el diseño que elijas.</p>
+              <a class="categoria-card__enlace" href="https://wa.me/34000000000">
+                Pedir por WhatsApp
+                <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="proceso">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Cómo funciona</p>
+          <h2 class="section-heading__title">En 3 pasos muy sencillos</h2>
+        </div>
+
+        <div class="proceso__pasos">
+          <div class="paso">
+            <span class="paso__numero">1</span>
+            <h3 class="paso__titulo">Cuéntanos tu idea</h3>
+            <p class="paso__descripcion">Por WhatsApp, nos dices qué quieres personalizar.</p>
+          </div>
+          <div class="paso">
+            <span class="paso__numero">2</span>
+            <h3 class="paso__titulo">Confirmamos precio y plazo</h3>
+            <p class="paso__descripcion">Te decimos cuánto cuesta y cuándo lo tienes.</p>
+          </div>
+          <div class="paso">
+            <span class="paso__numero">3</span>
+            <h3 class="paso__titulo">Lo recibes</h3>
+            <p class="paso__descripcion">Lo hacemos a mano y te lo enviamos o lo recoges en Sevilla.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-personalizados">
+      <div class="container">
+        <div class="banner-cta">
+          <div class="banner-cta__texto">
+            <p class="banner-cta__etiqueta">Personalizados</p>
+            <h2 class="banner-cta__titulo">¿Quieres un regalo único? Lo hacemos con su nombre</h2>
+            <p class="banner-cta__descripcion">Pulseras con iniciales, servilleteros y soportes pintados a tu gusto.</p>
+          </div>
+          <a class="btn btn--light" href="https://wa.me/34000000000">
+            Pedir por WhatsApp
+            <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
+          </a>
+        </div>
       </div>
     </section>
 
@@ -133,4 +240,3 @@
   <script src="js/main.js" defer></script>
 
 </body>
-

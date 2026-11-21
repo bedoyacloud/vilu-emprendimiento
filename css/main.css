@@ -1056,7 +1056,12 @@ ul {
   text-align: center;
 }
 
-/* 21. RESPONSIVE */
+/* 21. QUÉ PUEDES PERSONALIZAR (personalizados) */
+.que-personalizar {
+  padding: 6rem 0;
+}
+
+/* 22. RESPONSIVE */
 @media (max-width: 1200px) {
   .footer__columns {
     grid-template-columns: repeat(2, 1fr);
