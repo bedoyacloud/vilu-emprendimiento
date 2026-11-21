@@ -534,12 +534,12 @@ ul {
 }
 
 .productos__grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 
 .producto-card {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 0.875rem;
@@ -868,11 +868,105 @@ ul {
   font-size: 1.125em;
 }
 
-/* 16. RESPONSIVE */
+/* 16. CABECERA DE PÁGINA (tienda, taller, personalizados, contacto) */
+.cabecera-pagina {
+  padding: 4.5rem 0 3.5rem;
+  background-color: var(--color-rosa-arena);
+}
+
+.cabecera-pagina__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cabecera-pagina__eyebrow {
+  color: var(--color-salvia);
+  font-size: 0.8125em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cabecera-pagina__titulo {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  max-width: 50rem;
+}
+
+.cabecera-pagina__descripcion {
+  color: var(--color-gris);
+  font-size: 1.25em;
+}
+
+/* 17. CATÁLOGO (tienda) */
+.catalogo {
+  padding: 6rem 0;
+}
+
+.catalogo__barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.catalogo__filtros {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.chip-filtro {
+  padding: 0.625rem 1.25rem;
+  border: 1px solid var(--color-linea);
+  border-radius: 999px;
+  background-color: var(--color-blanco);
+  color: var(--color-cacao);
+  font-family: var(--font-main);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.chip-filtro--activo {
+  background-color: var(--color-cacao);
+  border-color: var(--color-cacao);
+  color: var(--color-crema);
+}
+
+.catalogo__orden {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem 1rem 0.625rem 1.25rem;
+  border: 1px solid var(--color-linea);
+  border-radius: 999px;
+  background-color: var(--color-blanco);
+  color: var(--color-cacao);
+  font-family: var(--font-main);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.catalogo__orden span {
+  color: var(--color-terracota);
+}
+
+.catalogo__contador {
+  color: var(--color-gris);
+  margin-bottom: 1.5rem;
+}
+
+/* 18. RESPONSIVE */
 @media (max-width: 1200px) {
   .footer__columns {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+  }
+
+  .productos__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -910,7 +1004,7 @@ ul {
   }
 
   .productos__grid {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .banner-cta {
@@ -966,5 +1060,9 @@ ul {
 
   .taller__pasos {
     flex-direction: column;
+  }
+
+  .cabecera-pagina__titulo {
+    font-size: 2.25rem;
   }
 }

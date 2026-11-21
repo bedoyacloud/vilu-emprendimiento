@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ViLu · Tienda — Pulseras, madera pintada y chocolates hechos a mano</title>
-  <meta name="description" content="Descubre la tienda de ViLu: pulseras, madera pintada y chocolates hechos a mano en Sevilla.">
+  <meta name="description"
+    content="Descubre la tienda de ViLu: pulseras, madera pintada y chocolates hechos a mano en Sevilla.">
 
   <link rel="icon" href="img/favicon.png" type="image/png">
 
@@ -50,10 +51,230 @@
 
   <main>
 
-    <section class="pagina-en-construccion">
+    <section class="cabecera-pagina">
+      <div class="container cabecera-pagina__container">
+        <p class="cabecera-pagina__eyebrow">Tienda</p>
+        <h1 class="cabecera-pagina__titulo">Todo lo que hacemos</h1>
+        <p class="cabecera-pagina__descripcion">Elige tu favorito y pídelo por WhatsApp. Si no encuentras lo que buscas,
+          lo hacemos para ti.</p>
+      </div>
+    </section>
+
+    <section class="catalogo">
       <div class="container">
-        <h1>Tienda</h1>
-        <p>Esta página está en construcción. Muy pronto podrás ver aquí todo el contenido.</p>
+
+        <div class="catalogo__barra">
+          <!-- PEC 5 (JS): los filtros mostrarán solo los productos de esa categoría -->
+          <div class="catalogo__filtros">
+            <button class="chip-filtro chip-filtro--activo" type="button">Todo</button>
+            <button class="chip-filtro" type="button">Pulseras</button>
+            <button class="chip-filtro" type="button">Madera pintada</button>
+            <button class="chip-filtro" type="button">Chocolates</button>
+          </div>
+
+          <!-- PEC 5 (JS): cambiará el orden de las tarjetas -->
+          <button class="catalogo__orden" type="button">
+            Ordenar por: Novedades
+            <span aria-hidden="true">▾</span>
+          </button>
+        </div>
+
+        <p class="catalogo__contador">8 productos</p>
+
+        <div class="productos__grid">
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: pulsera de mostacillas</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Pulseras</span>
+              <h3 class="producto-card__nombre">Pulsera de mostacillas</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">15,00 €</span>
+                <button class="producto-card__anadir" type="button"
+                  aria-label="Añadir Pulsera de mostacillas al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: pulsera con dije dorado</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Pulseras</span>
+              <h3 class="producto-card__nombre">Pulsera con dije dorado</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">12,00 €</span>
+                <button class="producto-card__anadir" type="button"
+                  aria-label="Añadir Pulsera con dije dorado al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: pulsera fucsia con perlas</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Pulseras</span>
+              <h3 class="producto-card__nombre">Pulsera fucsia con perlas</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">14,00 €</span>
+                <button class="producto-card__anadir" type="button"
+                  aria-label="Añadir Pulsera fucsia con perlas al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: pulsera de colores</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Pulseras</span>
+              <h3 class="producto-card__nombre">Pulsera de colores</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">13,00 €</span>
+                <button class="producto-card__anadir" type="button" aria-label="Añadir Pulsera de colores al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: servilletero pintado</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Madera pintada</span>
+              <h3 class="producto-card__nombre">Servilletero pintado</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">10,00 €</span>
+                <button class="producto-card__anadir" type="button" aria-label="Añadir Servilletero pintado al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: soporte de móvil</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Madera pintada</span>
+              <h3 class="producto-card__nombre">Soporte de móvil</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">14,00 €</span>
+                <button class="producto-card__anadir" type="button" aria-label="Añadir Soporte de móvil al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: casita para huevos</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Madera pintada</span>
+              <h3 class="producto-card__nombre">Casita para huevos</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">16,00 €</span>
+                <button class="producto-card__anadir" type="button" aria-label="Añadir Casita para huevos al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-card__foto">
+              <img src="img/icono-foto.svg" alt="" width="36" height="36">
+              <p>Foto: caja de chocolates</p>
+            </div>
+            <div class="producto-card__info">
+              <span class="producto-card__etiqueta">Chocolates</span>
+              <h3 class="producto-card__nombre">Caja de chocolates</h3>
+              <div class="producto-card__precio-fila">
+                <span class="producto-card__precio">8,00 €</span>
+                <button class="producto-card__anadir" type="button" aria-label="Añadir Caja de chocolates al carrito">
+                  <img src="img/icono-mas.svg" alt="" width="22" height="22">
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-personalizados">
+      <div class="container">
+        <div class="banner-cta">
+          <div class="banner-cta__texto">
+            <p class="banner-cta__etiqueta">Personalizados</p>
+            <h2 class="banner-cta__titulo">¿Quieres un regalo único? Lo hacemos con su nombre</h2>
+            <p class="banner-cta__descripcion">Pulseras con iniciales, servilleteros y soportes pintados a tu gusto.</p>
+          </div>
+          <a class="btn btn--light" href="https://wa.me/34000000000">
+            Pedir por WhatsApp
+            <img src="img/icono-flecha-terracota.svg" alt="" width="20" height="20">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="beneficios">
+      <div class="container beneficios__grid">
+
+        <div class="beneficio">
+          <span class="beneficio__icono">
+            <img src="img/icono-envio.svg" alt="" width="26" height="26">
+          </span>
+          <span class="beneficio__texto">
+            <span class="beneficio__titulo">Envíos a toda España</span>
+            <span class="beneficio__descripcion">Recogida gratis en Sevilla</span>
+          </span>
+        </div>
+
+        <div class="beneficio">
+          <span class="beneficio__icono">
+            <img src="img/icono-regalo.svg" alt="" width="26" height="26">
+          </span>
+          <span class="beneficio__texto">
+            <span class="beneficio__titulo">Envoltorio de regalo</span>
+            <span class="beneficio__descripcion">Incluido en todos los pedidos</span>
+          </span>
+        </div>
+
+        <div class="beneficio">
+          <span class="beneficio__icono">
+            <img src="img/icono-pago.svg" alt="" width="26" height="26">
+          </span>
+          <span class="beneficio__texto">
+            <span class="beneficio__titulo">Pago fácil</span>
+            <span class="beneficio__descripcion">Bizum o efectivo al recoger</span>
+          </span>
+        </div>
+
       </div>
     </section>
 
@@ -133,4 +354,3 @@
   <script src="js/main.js" defer></script>
 
 </body>
-
